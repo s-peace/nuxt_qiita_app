@@ -1,25 +1,25 @@
 <template>
   <section class="container">
     <div>
-    <h3>posts list wiz 'Nuxt.js' tags</h3>
-    <ul>
-      <li v-for="item in items" :key="item.id">
-        <h4>
-          <span>{{item.title}}</span>
-          <small>
-            <span>by</span>
-            <nuxt-link :to="`/users/${item.user.id}`">
-              {{item.user.id}}
-            </nuxt-link>
-          </small>
-        </h4>
-        <div>
-          {{item.body.slice(0,130)}}....
-        </div>
-        <p><a :href="item.url">{{item.url}}</a></p>
-      </li>
-    </ul>
-
+      <h1>index page</h1>
+      <h3>posts list wiz 'Nuxt.js' tags</h3>
+      <ul>
+        <li v-for="item in items" :key="item.id">
+          <h4>
+            <span>{{item.title}}</span>
+            <small>
+              <span>by</span>
+              <nuxt-link :to="`/users/${item.user.id}`">
+                {{item.user.id}}
+              </nuxt-link>
+            </small>
+          </h4>
+          <div>
+            {{item.body.slice(0,130)}}....
+          </div>
+          <p><a :href="item.url">{{item.url}}</a></p>
+        </li>
+      </ul>
     </div>
   </section>
 </template>

@@ -52,6 +52,11 @@ export default {
   axios:{
 
   },
+  router: {
+    middleware: [
+      'auth'
+    ]
+  },
 
   /*
   ** Build configuration
