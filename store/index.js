@@ -1,5 +1,15 @@
 import Vuex from 'vuex'
 
+// export const state = () => {
+//   isLoading:false
+// }
+
+// export const mutatons = {
+//   setIsLoading(state,isLoading){
+//     state.isLoading = isLoading
+//   }
+// }
+
 export default () =>
 new Vuex.Store({
   state: {
